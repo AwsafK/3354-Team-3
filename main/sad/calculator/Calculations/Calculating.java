@@ -1,8 +1,8 @@
-package saa.calculator.Calculations;
+package sad.calculator.Calculations;
 
 import java.util.ArrayList;
 
-import saa.calculator.Common.GradeInfo;
+import sad.calculator.Common.GradeInfo;
 
 /*
  * Grade information will be received from syllabus reader or user input, not relevant to this immediate section
