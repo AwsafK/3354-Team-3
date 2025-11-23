@@ -1,6 +1,6 @@
 package sad.calculator;
 
-import sad.calculator.Calculations.Calulating;
+import sad.calculator.Calculations.Calculating;
 import sad.calculator.Common.*;
 
 import static org.junit.Assert.assertEquals;
@@ -35,7 +35,7 @@ public class CalculatingTest
         exampleGrades.add(grade3);
         System.err.println("Grade added in test: " + grade3.getGrade());
         
-        Calulating calculating = new Calulating(exampleGrades);
+        Calculating calculating = new Calculating(exampleGrades);
         ArrayList<GradeInfo> initGrades = calculating.getGrades();
 
         assertNotNull(initGrades);
@@ -65,7 +65,7 @@ public class CalculatingTest
 
         double[] weightings = {0.2,0.3,0.5};
 
-        Calulating calculating = new Calulating(exampleGrades, weightings);
+        Calculating calculating = new Calculating(exampleGrades, weightings);
         ArrayList<GradeInfo> initGrades = calculating.getGrades();
 
         assertNotNull(initGrades);
@@ -91,7 +91,7 @@ public class CalculatingTest
         exampleGrades.add(grade2);
         System.err.println("Grade added in test: " + grade2.getGrade());
         
-        Calulating calculating = new Calulating(exampleGrades);
+        Calculating calculating = new Calculating(exampleGrades);
         boolean addResult = calculating.addGrade(100, 90);
 
         assertTrue(addResult);
@@ -118,7 +118,7 @@ public class CalculatingTest
         exampleGrades.add(grade2);
         System.err.println("Grade added in test: " + grade2.getGrade());
         
-        Calulating calculating = new Calulating(exampleGrades);
+        Calculating calculating = new Calculating(exampleGrades);
         boolean addResult = calculating.addGrade(100, 90, 0.5);
 
         assertTrue(addResult);
@@ -146,7 +146,7 @@ public class CalculatingTest
         exampleGrades.add(grade3);
         System.err.println("Grade added in test: " + grade3.getGrade());
         
-        Calulating calculating = new Calulating(exampleGrades);
+        Calculating calculating = new Calculating(exampleGrades);
         double unweightedClassGrade = calculating.calculateClassGrade();
 
         assertEquals(0.773, unweightedClassGrade, 0.001);
@@ -179,7 +179,7 @@ public class CalculatingTest
 
         double[] weightings = {0.4,0.6};
         
-        Calulating calculating = new Calulating(exampleGrades, weightings);
+        Calculating calculating = new Calculating(exampleGrades, weightings);
         double unweightedClassGrade = calculating.calculateClassGrade();
 
         assertEquals(0.812, unweightedClassGrade, 0.0001);
