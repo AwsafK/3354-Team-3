@@ -175,7 +175,7 @@ public class CalculatingTest
 
         GradeInfo grade4 = new GradeInfo(100, 86, 0.86, 0.6);
         exampleGrades.add(grade4);
-        System.err.println("Grade added in test: " + grade3.getGrade());
+        System.err.println("Grade added in test: " + grade4.getGrade());
 
         double[] weightings = {0.4,0.6};
         
