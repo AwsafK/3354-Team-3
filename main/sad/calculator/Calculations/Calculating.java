@@ -9,13 +9,13 @@ import sad.calculator.Common.GradeInfo;
  * Grade weighting should always be assumed to be converted to decimal form (double) before being fed into this class
  */
 
-public class Calulating {
+public class Calculating {
     private ArrayList<GradeInfo> grades;
     private int size = 0;
     private boolean weighted = false;
     private double[] weightings;
 
-    public Calulating(ArrayList<GradeInfo> grades) {
+    public Calculating(ArrayList<GradeInfo> grades) {
         this.grades = new ArrayList<>();
         for (int i = 0; i < grades.size(); i++) {
             this.grades.add(grades.get(i));
